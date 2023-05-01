@@ -12,7 +12,7 @@
     <title>Admin Dashboard</title>
 
     <!-- Custom fonts for this template-->
-   @include('includes.style')
+   @include('admin.includes.style')
 
 </head>
 
@@ -138,7 +138,7 @@
 
             <!-- Sidebar Message -->
             <div class="sidebar-card d-none d-lg-flex">
-                <img class="sidebar-card-illustration mb-2" src="img/undraw_rocket.svg" alt="...">
+                <img class="sidebar-card-illustration mb-2" src="{{asset('admin/img/undraw_rocket.svg')}}" alt="...">
                 <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
                 <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
             </div>
@@ -691,7 +691,7 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-           @include('includes.footer');
+           @include('admin.includes.footer');
             <!-- End of Footer -->
 
         </div>
@@ -726,7 +726,7 @@
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    @include('includes.script');
+    @include('admin.includes.script');
 </body>
 
 </html>
