@@ -18,8 +18,8 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/master', function () {
-    return view('admin.master');
+Route::get('/index', function () {
+    return view('admin.index');
 });
 Auth::routes();
 
@@ -27,5 +27,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::prefix('admin')->group(function (){
     
-    Route::get('/dashboard', [App\Http\Controllers\Admin\AdminController::class, 'index']);
+    Route::get('/index', [App\Http\Controllers\Admin\AdminController::class, 'index']);
 });
