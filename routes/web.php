@@ -18,14 +18,15 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/index', function () {
-    return view('admin.index');
-});
+// Route::get('/master', function () {
+//     return view('admin.master');
+// });
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::prefix('admin')->group(function (){
-    
-    Route::get('/index', [App\Http\Controllers\Admin\AdminController::class, 'index']);
+
+    Route::get('/dashboard', [App\Http\Controllers\Admin\AdminController::class, 'index']);
+
 });
