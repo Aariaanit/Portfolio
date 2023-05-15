@@ -23,7 +23,7 @@
                                 <form class="user" method="POST" action="{{ route('login') }}">
                                     @csrf
                                     <div class="form-group">
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                             <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus id="exampleInputEmail" aria-describedby="emailHelp"
                                             placeholder="Enter Email Address...">
             
@@ -35,7 +35,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                             <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password"  id="exampleInputPassword" placeholder="Password">
             
                                             @error('password')
@@ -57,7 +57,7 @@
                                         </div>
                                     </div>
                                     <div class="row mb-0">
-                                        <div class="col-md-8 offset-md-4">
+                                        <div class="col-md-12">
                                             <button type="submit" class="btn btn-primary btn-user btn-block">
                                                 {{ __('Login') }}
                                             </button>
@@ -78,7 +78,7 @@
 
                                 </form>
                                 <div class="text-center">
-                                    <a class="small" href="register.html">Create an Account!</a>
+                                    <a class="small" href="{}">Create an Account!</a>
                                 </div>
                             </div>
                         </div>
