@@ -78,7 +78,7 @@
 
                                 </form>
                                 <div class="text-center">
-                                    <a class="small" href="{{url('auth.register')}}">Create an Account!</a>
+                                    <a class="small" href="{{url('register')}}">Create an Account!</a>
                                 </div>
                             </div>
                         </div>
