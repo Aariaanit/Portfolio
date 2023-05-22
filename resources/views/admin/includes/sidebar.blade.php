@@ -63,10 +63,10 @@
             data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Category:</h6>
-                <a class="collapse-item" href="utilities-color.html">Colors</a>
-                <a class="collapse-item" href="utilities-border.html">Borders</a>
-                <a class="collapse-item" href="utilities-animation.html">Animations</a>
-                <a class="collapse-item" href="utilities-other.html">Other</a>
+                <a class="collapse-item" href="#">Java</a>
+                <a class="collapse-item" href="#">Python</a>
+                <a class="collapse-item" href="#">C#</a>
+                <a class="collapse-item" href="#">Networks</a>
             </div>
         </div>
     </li>
