@@ -11,7 +11,7 @@
     <!--Social Media Links end-->
     <div class="header-content">
         <div class="header-content-box">
-            <div class="firstline"><span class="color">Arianit </span>Tershnjaku</div>
+            <div class="firstline"><span class="color">Bubu </span>Dudu</div>
             <div class="secondline">
             We are
                 <span class="txt-rotate color" data-period="1200"data-rotate='[ " Designer.", " Blogger.", " Freelancer." ]'></span>

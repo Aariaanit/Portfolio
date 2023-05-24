@@ -21,7 +21,7 @@
     <!--mouse  follower-->
     <!--loader-->
         <div id="loader">
-            <span class="color">Arianit</span>Tershnjaku
+            <span class="color">Bubu</span>Dudu
         </div>
     <!--loader-end-->
     <!--link-screen-->
