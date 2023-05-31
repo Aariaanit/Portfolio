@@ -29,4 +29,6 @@ Route::prefix('admin')->middleware('auth','isAdmin')->group(function (){
 
     Route::get('/dashboard', [App\Http\Controllers\Admin\AdminController::class, 'index']);
 
+    Route::get('lesson', [App\Http\Controllers\Admin\LessonController::class, 'index'])
+
 });

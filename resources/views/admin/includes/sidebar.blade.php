@@ -90,8 +90,9 @@
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Insert:</h6>
                 <a class="collapse-item" href="#">Insert Project</a>
+                <a class="collapse-item" href="#">Insert Lesson</a>
                 <a class="collapse-item" href="#">Insert Users</a>
-                <a class="collapse-item" href="forgot-password.html">View Users</a>
+                <a class="collapse-item" href="#">View Users</a>
                 <div class="collapse-divider"></div>
                 <h6 class="collapse-header">All Project:</h6>
                 <a class="collapse-item" href="#">View Project</a>
