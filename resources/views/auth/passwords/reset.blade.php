@@ -18,16 +18,27 @@
                         <div class="col-lg-6">
                             <div class="p-5">
                                 <div class="text-center">
-                                    <h1 class="h4 text-gray-900 mb-2">Forgot Your Password?</h1>
-                                    <p class="mb-4">We get it, stuff happens. Just enter your email address below
-                                        and we'll send you a link to reset your password!</p>
+                                    <h1 class="h4 text-gray-900 mb-5">Reset Your Password?</h1>
+                                
                                 </div>
-                                <form class="user" method="POST" action="{{ route('password.email') }}">
+                                <form class="user" method="POST" action="{{ route('password.update') }}">
                                     @csrf
+                                    <input type="hidden" name="token" value="{{ $token }}">
+                                    <div class="row mb-3">
+                                        <div class="col-md-12 form-group">
+                                            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus placeholder="Enter Email Address...">
+            
+                                            @error('email')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror
+                                        </div>
+                                    </div>
                                     <div class="row mb-3">
                                         <div class="col-md-12 form-group">
                                             <input id="email" type="email" class="form-control form-control-user @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder="Enter Email Address...">
+                                                placeholder="Enter Password...">
 
                                             @error('email')
                                                 <span class="invalid-feedback" role="alert">
