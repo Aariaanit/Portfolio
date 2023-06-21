@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\HomeController;
+use App\Http\Controllers\Admin\LessonController;
+use App\Http\Controllers\Admin\ProjectController;
 
 
 /*
@@ -24,15 +28,15 @@ Route::get('/', function () {
 // });
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Route::prefix('admin')->middleware('auth','isAdmin')->group(function (){
 
-    Route::get('/dashboard', [App\Http\Controllers\Admin\AdminController::class, 'index']);
+    Route::get('/dashboard', [AdminController::class, 'index']);
 
-    Route::get('/lesson', [App\Http\Controllers\Admin\LessonController::class, 'index']);
+    Route::get('/lesson', [LessonController::class, 'index']);
 
-    Route::get('/project', [App\Http\Controllers\Admin\ProjectController::class, 'index']);
+    Route::get('/projects', [ProjectController::class, 'index']);
 
 
 });
