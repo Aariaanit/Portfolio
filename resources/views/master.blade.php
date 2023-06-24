@@ -8,6 +8,7 @@
 	<meta name="keywords" content="blog, business card, creative, creative portfolio, cv theme, online resume, personal, portfolio, professional cv, responsive portfolio, resume, resume theme, vcard" />
 	<meta name="author" content="Arianit Tershnjaku" />
     <title>Arianit Tershnjaku - Personal Portfolio Website Template</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
   <!--favicon-img--> 
    @include('includes/styles')
     <!--main css file-->

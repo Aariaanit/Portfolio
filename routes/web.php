@@ -32,11 +32,11 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Route::prefix('admin')->middleware('auth','isAdmin')->group(function (){
 
-    Route::get('/dashboard', [AdminController::class, 'index']);
+    Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard');;
 
-    Route::get('/lesson', [LessonController::class, 'index']);
+    Route::get('/lesson', [LessonController::class, 'index'])->name('lesson');;
 
-    Route::get('/projects', [ProjectController::class, 'index']);
+    Route::get('/projects', [ProjectController::class, 'index'])->name('projects');;
 
 
 });
