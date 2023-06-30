@@ -1,7 +1,7 @@
 @extends('admin.admin')
 @section('title','Project Page')
 @section('content')
-<div class="container-fluid">
+<div id="top" class="container-fluid">
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="check2" viewBox="0 0 16 16">
           <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
@@ -214,10 +214,8 @@
   <footer class="text-body-secondary py-5">
     <div class="container">
       <p class="float-end mb-1">
-        <a href="#">Back to top</a>
+        <a href="#top">Top</a>
       </p>
-      <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-      <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
     </div>
   </footer>
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
