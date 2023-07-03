@@ -11,7 +11,8 @@ class Projects extends Model
     protected $fillable = [
         'emri',
         'description',
-        'fileName'
+        'fileName',
+        'fileUpload'
     ];
     
 }

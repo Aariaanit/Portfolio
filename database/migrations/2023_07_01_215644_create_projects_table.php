@@ -16,6 +16,7 @@ return new class extends Migration
             $table->String('emri');
             $table->Text('description');
             $table->String('fileName');
+            $table->String('fileUpload');
             $table->timestamps();
         });
     }
